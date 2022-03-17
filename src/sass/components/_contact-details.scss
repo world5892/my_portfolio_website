@@ -1,0 +1,87 @@
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media only screen and (max-width: 53.125em) {
+    grid-template-columns: 1fr;
+  }
+
+  &__box {
+    background-color: var(--color-grey-dark-3);
+    padding: 2.5rem 2rem;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content;
+    align-items: center;
+    align-content: center;
+
+    column-gap: 2rem;
+  }
+
+  &__icon-box {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / -1;
+    background-color: var(--color-grey-dark-1);
+    border-radius: 50%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0 auto;
+    fill: var(--color-primary);
+  }
+
+  &__heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: var(--color-grey-light-2);
+    margin-bottom: 0.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &--fb,
+    &--tw {
+      margin-right: 0.7rem;
+    }
+  }
+
+  &__link--fb:hover &__social--fb,
+  &__link--fb:active &__social--fb {
+    fill: #3b5998;
+  }
+
+  &__link--tw:hover &__social--tw,
+  &__link--tw:active &__social--tw {
+    fill: #00acee;
+  }
+
+  &__link--linkedIn:hover &__social--linkedIn,
+  &__link--linkedIn:active &__social--linkedIn {
+    fill: #0a66c2;
+  }
+
+  &__social {
+    width: 100%;
+    height: 100%;
+    fill: var(--color-white);
+    transition: 0.3s;
+  }
+}

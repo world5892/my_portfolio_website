@@ -1,0 +1,7 @@
+.admin {
+  &__info {
+    @media only screen and (max-width: 50em) {
+      width: 80%;
+    }
+  }
+}

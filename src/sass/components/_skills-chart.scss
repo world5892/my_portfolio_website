@@ -1,0 +1,41 @@
+.skills-chart {
+  padding: 3rem;
+  border-radius: 5px;
+  background-color: var(--color-grey-dark-3);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 4.5rem;
+
+  &__text {
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__percentage {
+    animation: progress-percentage 1s 1s backwards;
+  }
+
+  &__progress {
+    background-color: var(--color-grey-dark-1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__progress-wrapper {
+    background-color: transparent;
+  }
+
+  &__progress-bar {
+    height: 2rem;
+    background-image: linear-gradient(to left, var(--color-primary), var(--color-primary-light));
+    animation: skill-progress 1s;
+  }
+}

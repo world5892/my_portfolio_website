@@ -1,0 +1,77 @@
+.projects {
+  @media only screen and (max-width: 28.125em) {
+    padding: 4rem 0;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    @media only screen and (max-width: 28.125em) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__line {
+    flex: 1 1 auto;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--color-grey-dark-1);
+
+    @media only screen and (max-width: 28.125em) {
+      display: none;
+    }
+  }
+
+  &__list {
+    flex: 0 1 auto;
+    list-style: none;
+    border: 2px solid var(--color-grey-dark-1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+  }
+
+  &__item {
+    &::not(:last-child) {
+      border-right: 1px solid var(--color-white);
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      min-width: 14rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      filter: brightness(0.9);
+      transition: filter 0.3s;
+
+      @media only screen and (max-width: 31.25em) {
+        min-width: 11rem;
+      }
+    }
+
+    &:active,
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+
+  &__info-par {
+    text-align: justify;
+
+    @media only screen and (max-width: 28.125em) {
+      padding: 0 2rem;
+    }
+  }
+}

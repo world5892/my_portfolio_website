@@ -1,0 +1,33 @@
+// Overriden default values
+.Toastify .Toastify__toast {
+  background-color: var(--color-grey-dark-3);
+}
+
+.Toastify .Toastify__toast-container--bottom-center {
+  width: 100vw;
+  bottom: 5rem;
+}
+
+.Toastify .Toastify__toast-container--top-right {
+  top: 10rem;
+}
+
+.Toastify .Toastify__close-button svg {
+  fill: var(--color-primary);
+}
+
+.Toastify .Toastify__close-button:hover svg {
+  fill: var(--color-primary-light);
+}
+
+.Toastify .Toastify__toast-icon svg {
+  fill: var(--color-primary-light);
+}
+
+.Toastify .Toastify__toast-icon > div {
+  color: var(--color-white);
+}
+
+.Toastify .Toastify__progress-bar {
+  background-color: var(--color-primary-light);
+}

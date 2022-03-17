@@ -1,0 +1,31 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  &__input {
+    width: 30%;
+    height: 100%;
+    padding: 1.3rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    color: var(--color-white);
+    background-color: var(--color-grey-dark-1);
+    outline: none;
+    transition: border 0.5s;
+
+    @media only screen and (max-width: 28.125em) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: var(--color-grey-light-2);
+    }
+
+    &:focus {
+      border: 2px solid var(--color-primary);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@keyframes heading-primary {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateX(3rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes heading-secondary {
+  0% {
+    transform: translateX(30rem);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateX(-3rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes button {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-line-center {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: var(--color-primary);
+  }
+}
+
+@keyframes bottom-line-left {
+  0% {
+    width: 30rem;
+    transform: translateX(-30rem);
+  }
+
+  100% {
+    width: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottom-line-right {
+  0% {
+    width: 30rem;
+    transform: translateX(30rem);
+  }
+
+  100% {
+    width: 5rem;
+    transform: translateX(0);
+  }
+}
+
+@keyframes skill-progress {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes progress-percentage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

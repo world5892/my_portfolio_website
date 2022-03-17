@@ -1,0 +1,84 @@
+.navigation-mobile {
+  &__btn {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    width: 6rem;
+    height: 6rem;
+    border: 2px dashed var(--color-primary-light);
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 50;
+    transition: border 0.3s;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-primary-light);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s;
+
+    &--close {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    // background-image: radial-gradient(var(--color-primary), var(--color-primary-light));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('../../img/background.jpg');
+    overflow: hidden;
+    transition: 0.9s;
+    z-index: 30;
+  }
+
+  &__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    z-index: 40;
+
+    list-style: none;
+    transition: all 0.3s 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @media only screen and (orientation: landscape) {
+      row-gap: 2rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: block;
+    color: var(--color-primary-light);
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  &__link:active {
+    transform: scale(0.95);
+  }
+}
