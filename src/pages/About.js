@@ -28,7 +28,7 @@ function About() {
             <li className="about__item">
               <ArrowRight className="about__icon" />
               Age:
-              <span className="about__span">29</span>
+              <span className="about__span">32</span>
             </li>
             <li className="about__item">
               <ArrowRight className="about__icon" />
@@ -39,11 +39,11 @@ function About() {
         </div>
 
         <div className="about__description">
-          I've been dealing with programming websites and web applications for about five years now.
+          I've been dealing with programming websites and web applications for a few of years now.
           During this time I've read a couple of books and covered a lot of courses, which helped me
-          compare different programming approaches and techniques and choose the most suitable ones.
-          Although I haven't graduated from a programming school, I believe I've already acquired
-          enough knowledge to build websites that will meet clients' needs and expectations.
+          gain quite a good understanding of front-end web development. Although I haven't graduated
+          from a programming school, I believe I've already acquired enough knowledge to become a
+          valuable part of a software developers' team.
         </div>
       </div>
     </section>
