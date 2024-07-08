@@ -67,6 +67,59 @@
     transition: all 0.4s;
   }
 
+  &__progress-info {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: rgba(var(--color-primary-rgb), 0.7);
+    border: 1px solid var(--color-grey-light-3);
+    border-radius: 10px;
+    z-index: 50;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: rgba(var(--color-primary-rgb), 9);
+    }
+
+    &:before {
+      content: 'This course is currently in progress';
+      display: block;
+      width: max-content;
+      padding: inherit;
+      position: absolute;
+      top: 50%;
+      left: calc(130% + 8px);
+      transform: translateY(-50%) scaleX(0);
+      transform-origin: left;
+      font-size: inherit;
+      background-color: rgba(var(--color-grey-light-3-rgb), 0.9);
+      border-radius: 10px;
+      transition: all 0.2s;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 130%;
+      transform: translate(50%, -50%) scaleX(0);
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-right: 8px solid var(--color-grey-light-3);
+      transition: all 0.4s;
+    }
+
+    &:hover:before,
+    &:hover:after {
+      transform: translateY(-50%) scaleX(1);
+    }
+  }
+
   &__overlay {
     position: absolute;
     top: 0;

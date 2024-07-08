@@ -19,6 +19,7 @@ function Slide({ numSlide, curSlide, project, toggleDetails, onImageLoad }) {
         transform: `translate(${moveBy}%)`,
       }}
     >
+      {project.inProgress && <span className="slider__progress-info">WIP</span>}
       <img
         className="slider__img"
         src={project.imageUrl}
